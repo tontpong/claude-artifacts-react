@@ -83,7 +83,7 @@ export default function GachaSimulator() {
 
   return (
     <div className="p-4 max-w-md mx-auto">
-      <SpeedInsights/>chkspd
+      <SpeedInsights/>
       <div className="flex justify-between items-center mb-4">
         <Button onClick={() => changeLanguage(-1)}><ChevronLeft size={24} /></Button>
         <div className="text-center">
