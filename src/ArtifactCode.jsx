@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const items = [
   { name: ['犬', 'Dog', 'หมา', '狗'], emoji: '🐶' },
@@ -82,6 +83,7 @@ export default function GachaSimulator() {
 
   return (
     <div className="p-4 max-w-md mx-auto">
+      <SpeedInsights/>chkspd
       <div className="flex justify-between items-center mb-4">
         <Button onClick={() => changeLanguage(-1)}><ChevronLeft size={24} /></Button>
         <div className="text-center">
